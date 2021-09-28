@@ -29,4 +29,47 @@ const user = {
     id: 1,
     name: "srujan",
 };
-console.log(user.name);
+const user1 = {
+    id: 2,
+    name: "Patluri",
+};
+//Type Assertions
+let some = "srujan";
+let name1 = some;
+let name2 = some;
+// console.log(name1)
+//Functions
+function addNum(x, y) {
+    return x + y;
+}
+// console.log(addNum(5,4));
+// Void Functions
+function displayMsg(message) {
+    console.log(message);
+}
+// displayMsg("Hello From Typescript");
+const ar = (mes) => {
+    console.log(mes);
+};
+const userInfo = {
+    id: 1,
+    name: "srujan"
+};
+class Person {
+    constructor(id, name) {
+        this.id = id;
+        this.name = name;
+    }
+    register() {
+        return `${this.name} is the new member to register`;
+    }
+}
+const firstPerson = new Person(1, "Srujan");
+// console.log(firstPerson.register());
+//Generics
+function getArray(items) {
+    return new Array().concat(items);
+}
+const numArr = getArray([1, 2, 3, 4, 5]);
+const strArr = getArray(["srujan", "aspiring SDE", "Frontend developer"]);
+console.log(numArr);
